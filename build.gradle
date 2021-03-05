@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    enabled = true
+}
+
+bootJar {
+    enabled = false
+}
+
+dependencies {
+    compile project(':module-entity')
+
+}
